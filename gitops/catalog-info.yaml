@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ced27q3s9-python-gitops
+  description: This is GitOps manifest for ced27q3s9-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=ced27q3s9-python
+    backstage.io/kubernetes-id: ced27q3s9-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ced27q3s9-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ced27q3s9-python

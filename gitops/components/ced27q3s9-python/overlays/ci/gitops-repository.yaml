@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ced27q3s9-python-gitops-repository
+spec:
+  url: https://github.com/xjiangorg/ced27q3s9-python-gitops
